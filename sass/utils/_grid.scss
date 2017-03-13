@@ -1,0 +1,20 @@
+/*============================
+=            Grid            =
+============================*/
+
+
+// Default settings for our Susy Grid
+// Uncomment the debug item to display the grid lines in the browser
+
+
+$susy: (
+  columns: 12, // The number of columns in your grid
+  gutters: 24px/78px, // The size of a gutter, equal to base line-height for 1200 width
+  gutter-position: after, // Margins always added after column, requires "last" to be included in span() function for last item
+  math: fluid, // prevent static pixel widths
+  global-box-sizing: border-box, // force border box on everything
+  //debug: (image: true, color: lightblue, output: background)
+);
+
+
+/*=====  End of Grid  ======*/

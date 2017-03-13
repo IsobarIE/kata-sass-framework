@@ -1,0 +1,44 @@
+/* All Variables should be declared here which makes it easier to update if something changes globally */
+
+//Responsive variables - see breakpoint manager mixin
+$phone-narrow-breakpoint-min-width: 34em;
+$phone-breakpoint-min-width: 47.99em; // make sure this doesn't apply to ipad portrait
+$tablet-breakpoint-min-width: 62em; // 992
+$desktop-breakpoint-min-width: 90em; // 1440 allow for specific styles on very large screens
+
+
+// Base Typography
+$base-font-size: 1.6rem; // 16px - see base font-size reset in isobar-reset.scss
+$large-screen-font-size: 1.8rem; // 18px
+$base-line-height: 1.5; // 24px - should match the gutter size below
+
+// Fonts
+$global-font: 'Roboto';
+$heading-font: 'Dosis';
+$fallback: Arial, sans-serif;
+
+
+// Grid Gutters (can be used to add padding and keep spacing consistent)
+$gutter: 24px;
+$gutter-phone: 12px;
+$gutter-phone-narrow: 6px;
+
+
+// Colour variables - split background colours and text colours
+// If prefixed with x- should only be assigned to other variables, not used on their own.
+// Colour names for same colour variations can be generated using http://chir.ag/projects/name-that-color/, avoid grey, light-grey, light-grey2, light-grey-3!
+
+$black: #000;
+$white: #fff;
+
+// See below example, by using $border-colour wherever needed it means if you want to change that border colour to red for example, you don't have to change every reference to x-grey in all files - just do a simple variable swap in one place.
+
+$x-grey: #eee;
+$x-red: #ff0000;
+
+$border-colour: $x-grey;
+
+
+
+
+

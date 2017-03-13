@@ -1,0 +1,29 @@
+/*=================================
+=            Structure            =
+=================================*/
+
+
+.full-width-container {
+  width: 100%;
+}
+
+/* If necessary you can set up a grid that will always fill 100% of the available space */
+.full-width-grid-container {
+  @include container(100%);
+}
+
+/* Base grid will be 100% of screen by default until it reaches above the tablet breakpoint of 992px */
+.grid-content-container {
+  @include container();
+
+  @include media-query('tablet') {
+    @include container(960px);
+  }
+
+  @include media-query('desktop') {
+    @include container(1200px);
+  }
+}
+
+
+/*=====  End of Structure  ======*/

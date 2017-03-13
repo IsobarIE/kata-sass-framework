@@ -1,0 +1,58 @@
+/* Declare font face variations here - make sure to update the source url with the theme name, font name and upload the font files in the correct directory */
+
+
+
+
+
+/* Declare site wide typography styles here */
+
+body {
+  font-family: $global-font, $fallback;
+  font-size: $base-font-size; /* 16px */
+  line-height: $base-line-height; /* 24px */
+  font-weight: 300;
+  color: $black;
+
+  @include media-query('desktop') {
+    font-size: $large-screen-font-size;
+  }
+}
+
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+
+
+/* SVG icon sprite */
+
+.svg-sprite {
+  display: none;
+}
+
+svg path {
+  fill: inherit !important;
+}
+
+.svg-icon {
+  display: inline-block; /* Flow with text content */
+  fill: currentColor; /* Inherit the parent text color */
+  height: 1.2em; /* Use the parent font-size for width and height */
+  width: 1.2em; /* Use the parent font-size for width and height */
+  vertical-align: middle; /* Vertically align icon with adjacent text */
+  position: relative; /* Align nicely with capital letters */
+  top: -.0625em;
+}
