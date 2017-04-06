@@ -6,6 +6,11 @@ Our naming conventions are loosely based on the SMACSS architecture (Scalable an
 
 Each folder of the framework has its own `README.md` file to explain the purpose and add extra information. Make sure to browse the repository to see how it all works.
 
-## Susy setup
+## Susy Setup
 
 Run npm install susy in the root of your project and ensure the path to the folder in main.scss is correct
+
+
+## Gulp Setup
+
+To Do
